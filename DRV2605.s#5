@@ -2320,40 +2320,36 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C1" library="SparkFun-Capacitors" deviceset="1.0UF-16V-10%(0402)" device="" value="1.0uF"/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="U2" library="SparkFun-PowerIC" deviceset="DRV2605L" device=""/>
-<part name="U3" library="SparkFun-PowerIC" deviceset="DRV2605L" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="90.932" y="204.47" size="1.778" layer="97">7-Bit I2C Address: 0x5A</text>
-<text x="124.206" y="228.6" size="1.778" layer="97">VCC: 2-5.2V</text>
-<text x="72.898" y="246.38" size="1.778" layer="97">Clear jumper to remove
+<text x="84.582" y="66.04" size="1.778" layer="97">7-Bit I2C Address: 0x5A</text>
+<text x="117.856" y="90.17" size="1.778" layer="97">VCC: 2-5.2V</text>
+<text x="66.548" y="107.95" size="1.778" layer="97">Clear jumper to remove
 pull-ups from I2C bus</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="R1" gate="G$1" x="73.66" y="231.14" rot="R90"/>
-<instance part="R2" gate="G$1" x="58.42" y="231.14" rot="R90"/>
-<instance part="GND2" gate="1" x="76.2" y="200.66"/>
-<instance part="SUPPLY7" gate="G$1" x="48.26" y="233.68"/>
-<instance part="SUPPLY8" gate="G$1" x="66.04" y="246.38"/>
-<instance part="I2C" gate="G$1" x="66.04" y="238.76" smashed="yes" rot="R270">
-<attribute name="NAME" x="64.262" y="234.696" size="1.778" layer="95"/>
-<attribute name="VALUE" x="71.12" y="241.935" size="1.778" layer="96"/>
+<instance part="R1" gate="G$1" x="67.31" y="92.71" rot="R90"/>
+<instance part="R2" gate="G$1" x="52.07" y="92.71" rot="R90"/>
+<instance part="GND2" gate="1" x="69.85" y="62.23"/>
+<instance part="SUPPLY7" gate="G$1" x="41.91" y="95.25"/>
+<instance part="SUPPLY8" gate="G$1" x="59.69" y="107.95"/>
+<instance part="I2C" gate="G$1" x="59.69" y="100.33" smashed="yes" rot="R270">
+<attribute name="NAME" x="57.912" y="96.266" size="1.778" layer="95"/>
+<attribute name="VALUE" x="64.77" y="103.505" size="1.778" layer="96"/>
 </instance>
-<instance part="JP2" gate="G$1" x="144.78" y="223.52" rot="R180"/>
-<instance part="GND6" gate="1" x="43.18" y="208.28"/>
-<instance part="JP1" gate="G$1" x="33.02" y="220.98"/>
-<instance part="U1" gate="DRV2605" x="101.6" y="220.98"/>
-<instance part="C3" gate="G$1" x="76.2" y="208.28"/>
-<instance part="SUPPLY1" gate="G$1" x="160.02" y="228.6"/>
-<instance part="GND1" gate="1" x="121.92" y="203.2"/>
-<instance part="C1" gate="G$1" x="160.02" y="220.98"/>
-<instance part="GND3" gate="1" x="160.02" y="210.82"/>
-<instance part="SUPPLY2" gate="G$1" x="119.38" y="228.6"/>
-<instance part="U2" gate="DRV2605" x="101.6" y="186.69"/>
-<instance part="U3" gate="DRV2605" x="101.6" y="157.48"/>
+<instance part="JP2" gate="G$1" x="138.43" y="85.09" rot="R180"/>
+<instance part="GND6" gate="1" x="36.83" y="69.85"/>
+<instance part="JP1" gate="G$1" x="26.67" y="82.55"/>
+<instance part="U1" gate="DRV2605" x="95.25" y="82.55"/>
+<instance part="C3" gate="G$1" x="69.85" y="69.85"/>
+<instance part="SUPPLY1" gate="G$1" x="153.67" y="90.17"/>
+<instance part="GND1" gate="1" x="115.57" y="64.77"/>
+<instance part="C1" gate="G$1" x="153.67" y="82.55"/>
+<instance part="GND3" gate="1" x="153.67" y="72.39"/>
+<instance part="SUPPLY2" gate="G$1" x="113.03" y="90.17"/>
 </instances>
 <busses>
 </busses>
@@ -2362,23 +2358,23 @@ pull-ups from I2C bus</text>
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="76.2" y1="203.2" x2="76.2" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="69.85" y1="64.77" x2="69.85" y2="67.31" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="DRV2605" pin="GND"/>
-<wire x1="116.84" y1="220.98" x2="121.92" y2="220.98" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="220.98" x2="121.92" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="110.49" y1="82.55" x2="115.57" y2="82.55" width="0.1524" layer="91"/>
+<wire x1="115.57" y1="82.55" x2="115.57" y2="67.31" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="6"/>
-<wire x1="38.1" y1="228.6" x2="43.18" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="31.75" y1="90.17" x2="36.83" y2="90.17" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="43.18" y1="228.6" x2="43.18" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="36.83" y1="90.17" x2="36.83" y2="72.39" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="160.02" y1="218.44" x2="160.02" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="153.67" y1="80.01" x2="153.67" y2="74.93" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 </net>
@@ -2386,104 +2382,104 @@ pull-ups from I2C bus</text>
 <segment>
 <pinref part="I2C" gate="G$1" pin="2"/>
 <pinref part="SUPPLY8" gate="G$1" pin="VCC"/>
-<wire x1="66.04" y1="246.38" x2="66.04" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="59.69" y1="107.95" x2="59.69" y2="105.41" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="5"/>
-<wire x1="38.1" y1="226.06" x2="48.26" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="31.75" y1="87.63" x2="41.91" y2="87.63" width="0.1524" layer="91"/>
 <pinref part="SUPPLY7" gate="G$1" pin="VCC"/>
-<wire x1="48.26" y1="226.06" x2="48.26" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="41.91" y1="87.63" x2="41.91" y2="95.25" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY1" gate="G$1" pin="VCC"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="160.02" y1="226.06" x2="160.02" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="153.67" y1="87.63" x2="153.67" y2="90.17" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="DRV2605" pin="VDD"/>
-<wire x1="116.84" y1="226.06" x2="119.38" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="110.49" y1="87.63" x2="113.03" y2="87.63" width="0.1524" layer="91"/>
 <pinref part="U1" gate="DRV2605" pin="VDD/NC"/>
-<wire x1="116.84" y1="215.9" x2="119.38" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="215.9" x2="119.38" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="226.06" x2="119.38" y2="228.6" width="0.1524" layer="91"/>
-<junction x="119.38" y="226.06"/>
+<wire x1="110.49" y1="77.47" x2="113.03" y2="77.47" width="0.1524" layer="91"/>
+<wire x1="113.03" y1="77.47" x2="113.03" y2="87.63" width="0.1524" layer="91"/>
+<wire x1="113.03" y1="87.63" x2="113.03" y2="90.17" width="0.1524" layer="91"/>
+<junction x="113.03" y="87.63"/>
 <pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="U1" gate="DRV2605" pin="REG"/>
-<wire x1="86.36" y1="226.06" x2="76.2" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="80.01" y1="87.63" x2="69.85" y2="87.63" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="76.2" y1="226.06" x2="76.2" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="69.85" y1="87.63" x2="69.85" y2="74.93" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="U1" gate="DRV2605" pin="IN/TRIG"/>
 <pinref part="JP1" gate="G$1" pin="2"/>
-<wire x1="86.36" y1="218.44" x2="38.1" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="80.01" y1="80.01" x2="31.75" y2="80.01" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="U1" gate="DRV2605" pin="EN"/>
 <pinref part="JP1" gate="G$1" pin="1"/>
-<wire x1="86.36" y1="215.9" x2="38.1" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="80.01" y1="77.47" x2="31.75" y2="77.47" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="U1" gate="DRV2605" pin="OUT-"/>
 <pinref part="JP2" gate="G$1" pin="1"/>
-<wire x1="116.84" y1="223.52" x2="137.16" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="110.49" y1="85.09" x2="130.81" y2="85.09" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="U1" gate="DRV2605" pin="OUT+"/>
-<wire x1="116.84" y1="218.44" x2="134.62" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="218.44" x2="134.62" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="110.49" y1="80.01" x2="128.27" y2="80.01" width="0.1524" layer="91"/>
+<wire x1="128.27" y1="80.01" x2="128.27" y2="82.55" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="G$1" pin="2"/>
-<wire x1="134.62" y1="220.98" x2="137.16" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="128.27" y1="82.55" x2="130.81" y2="82.55" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="I2C" gate="G$1" pin="3"/>
-<wire x1="60.96" y1="238.76" x2="58.42" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="54.61" y1="100.33" x2="52.07" y2="100.33" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="58.42" y1="238.76" x2="58.42" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="52.07" y1="100.33" x2="52.07" y2="97.79" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="I2C" gate="G$1" pin="1"/>
-<wire x1="71.12" y1="238.76" x2="73.66" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="64.77" y1="100.33" x2="67.31" y2="100.33" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="73.66" y1="238.76" x2="73.66" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="67.31" y1="100.33" x2="67.31" y2="97.79" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="U1" gate="DRV2605" pin="SDA"/>
 <pinref part="JP1" gate="G$1" pin="4"/>
-<wire x1="86.36" y1="223.52" x2="58.42" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="80.01" y1="85.09" x2="52.07" y2="85.09" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="223.52" x2="38.1" y2="223.52" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="226.06" x2="58.42" y2="223.52" width="0.1524" layer="91"/>
-<junction x="58.42" y="223.52"/>
+<wire x1="52.07" y1="85.09" x2="31.75" y2="85.09" width="0.1524" layer="91"/>
+<wire x1="52.07" y1="87.63" x2="52.07" y2="85.09" width="0.1524" layer="91"/>
+<junction x="52.07" y="85.09"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="U1" gate="DRV2605" pin="SCL"/>
 <pinref part="JP1" gate="G$1" pin="3"/>
-<wire x1="86.36" y1="220.98" x2="73.66" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="80.01" y1="82.55" x2="67.31" y2="82.55" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="73.66" y1="220.98" x2="38.1" y2="220.98" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="226.06" x2="73.66" y2="220.98" width="0.1524" layer="91"/>
-<junction x="73.66" y="220.98"/>
+<wire x1="67.31" y1="82.55" x2="31.75" y2="82.55" width="0.1524" layer="91"/>
+<wire x1="67.31" y1="87.63" x2="67.31" y2="82.55" width="0.1524" layer="91"/>
+<junction x="67.31" y="82.55"/>
 </segment>
 </net>
 </nets>
