@@ -13880,6 +13880,11 @@ Source: AVX .. aphvc.pdf</description>
 <part name="R20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="10K"/>
 <part name="P+7" library="microbuilder" deviceset="VCC" device=""/>
 <part name="U$4" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$5" library="yhtomit_jumpers" deviceset="JUMPER_3PLACE_NO_XTRA_SMALL" device=""/>
+<part name="U$6" library="yhtomit_jumpers" deviceset="JUMPER_3PLACE_NO_XTRA_SMALL" device=""/>
+<part name="P+9" library="microbuilder" deviceset="VCC" device=""/>
+<part name="U$7" library="microbuilder" deviceset="GND" device=""/>
+<part name="P+10" library="microbuilder" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15110,7 +15115,7 @@ pull-ups from I2C bus</text>
 <instance part="C15" gate="G$1" x="72.39" y="63.5"/>
 <instance part="R17" gate="G$1" x="49.53" y="111.76" rot="R90"/>
 <instance part="P+8" gate="VCC" x="49.53" y="119.38"/>
-<instance part="U$1" gate="G$1" x="72.39" y="82.55"/>
+<instance part="U$1" gate="G$1" x="55.88" y="67.31"/>
 <instance part="U9" gate="G$1" x="184.15" y="90.17"/>
 <instance part="R18" gate="G$1" x="153.67" y="140.97" rot="R90"/>
 <instance part="R19" gate="G$1" x="146.05" y="140.97" rot="R90"/>
@@ -15124,6 +15129,11 @@ pull-ups from I2C bus</text>
 <instance part="R20" gate="G$1" x="135.89" y="113.03" rot="R90"/>
 <instance part="P+7" gate="VCC" x="135.89" y="120.65"/>
 <instance part="U$4" gate="G$1" x="158.75" y="83.82"/>
+<instance part="U$5" gate="G$1" x="55.88" y="77.47" rot="R180"/>
+<instance part="U$6" gate="G$1" x="46.99" y="93.98" rot="R180"/>
+<instance part="P+9" gate="VCC" x="55.88" y="87.63"/>
+<instance part="U$7" gate="G$1" x="46.99" y="83.82"/>
+<instance part="P+10" gate="VCC" x="46.99" y="104.14"/>
 </instances>
 <busses>
 </busses>
@@ -15197,6 +15207,16 @@ pull-ups from I2C bus</text>
 <pinref part="R20" gate="G$1" pin="2"/>
 <pinref part="P+7" gate="VCC" pin="VCC"/>
 </segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="3"/>
+<pinref part="P+9" gate="VCC" pin="VCC"/>
+<wire x1="55.88" y1="82.55" x2="55.88" y2="85.09" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="3"/>
+<pinref part="P+10" gate="VCC" pin="VCC"/>
+<wire x1="46.99" y1="99.06" x2="46.99" y2="101.6" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$23" class="0">
 <segment>
@@ -15235,20 +15255,6 @@ pull-ups from I2C bus</text>
 <wire x1="80.01" y1="60.96" x2="82.55" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U8" gate="G$1" pin="A2"/>
-<pinref part="U$1" gate="G$1" pin="GND"/>
-<wire x1="82.55" y1="91.44" x2="72.39" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="72.39" y1="91.44" x2="72.39" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="U8" gate="G$1" pin="A1"/>
-<wire x1="72.39" y1="88.9" x2="72.39" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="72.39" y1="86.36" x2="72.39" y2="85.09" width="0.1524" layer="91"/>
-<wire x1="82.55" y1="88.9" x2="72.39" y2="88.9" width="0.1524" layer="91"/>
-<junction x="72.39" y="88.9"/>
-<pinref part="U8" gate="G$1" pin="A0"/>
-<wire x1="82.55" y1="86.36" x2="72.39" y2="86.36" width="0.1524" layer="91"/>
-<junction x="72.39" y="86.36"/>
-</segment>
-<segment>
 <pinref part="U$3" gate="G$1" pin="GND"/>
 <pinref part="C16" gate="G$1" pin="2"/>
 <wire x1="158.75" y1="57.15" x2="158.75" y2="59.69" width="0.1524" layer="91"/>
@@ -15272,6 +15278,16 @@ pull-ups from I2C bus</text>
 <pinref part="U9" gate="G$1" pin="A0"/>
 <wire x1="168.91" y1="87.63" x2="158.75" y2="87.63" width="0.1524" layer="91"/>
 <junction x="158.75" y="87.63"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND"/>
+<pinref part="U$5" gate="G$1" pin="1"/>
+<wire x1="55.88" y1="69.85" x2="55.88" y2="72.39" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$7" gate="G$1" pin="GND"/>
+<pinref part="U$6" gate="G$1" pin="1"/>
+<wire x1="46.99" y1="86.36" x2="46.99" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="0SDA" class="0">
@@ -15538,6 +15554,32 @@ pull-ups from I2C bus</text>
 <pinref part="U8" gate="G$1" pin="SCL5"/>
 <wire x1="113.03" y1="76.2" x2="125.73" y2="76.2" width="0.1524" layer="91"/>
 <label x="115.57" y="76.2" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="A2"/>
+<wire x1="82.55" y1="91.44" x2="72.39" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="A0"/>
+<wire x1="82.55" y1="86.36" x2="72.39" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="2"/>
+<wire x1="60.96" y1="77.47" x2="66.04" y2="77.47" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="77.47" x2="66.04" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="86.36" x2="72.39" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$30" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="A1"/>
+<wire x1="82.55" y1="88.9" x2="72.39" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="2"/>
+<wire x1="52.07" y1="93.98" x2="62.23" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="62.23" y1="93.98" x2="62.23" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="62.23" y1="88.9" x2="72.39" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

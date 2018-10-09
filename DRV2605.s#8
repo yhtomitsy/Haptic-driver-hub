@@ -2322,6 +2322,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="U2" library="SparkFun-PowerIC" deviceset="DRV2605L" device=""/>
 <part name="U3" library="SparkFun-PowerIC" deviceset="DRV2605L" device=""/>
+<part name="U4" library="SparkFun-PowerIC" deviceset="DRV2605L" device=""/>
+<part name="U5" library="SparkFun-PowerIC" deviceset="DRV2605L" device=""/>
+<part name="U6" library="SparkFun-PowerIC" deviceset="DRV2605L" device=""/>
+<part name="U7" library="SparkFun-PowerIC" deviceset="DRV2605L" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2354,6 +2358,10 @@ pull-ups from I2C bus</text>
 <instance part="SUPPLY2" gate="G$1" x="119.38" y="228.6"/>
 <instance part="U2" gate="DRV2605" x="101.6" y="186.69"/>
 <instance part="U3" gate="DRV2605" x="101.6" y="157.48"/>
+<instance part="U4" gate="DRV2605" x="102.87" y="121.92"/>
+<instance part="U5" gate="DRV2605" x="101.6" y="88.9"/>
+<instance part="U6" gate="DRV2605" x="101.6" y="55.88"/>
+<instance part="U7" gate="DRV2605" x="101.6" y="21.59"/>
 </instances>
 <busses>
 </busses>
