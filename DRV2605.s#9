@@ -16444,7 +16444,10 @@ pull-ups from I2C bus</text>
 <instance part="GND47" gate="1" x="195.58" y="53.34" rot="MR0"/>
 <instance part="GND48" gate="1" x="220.98" y="53.34" rot="MR0"/>
 <instance part="GND49" gate="1" x="96.52" y="7.62" rot="MR0"/>
-<instance part="U$9" gate="G$1" x="320.04" y="182.88"/>
+<instance part="U$9" gate="G$1" x="314.96" y="180.34" smashed="yes">
+<attribute name="NAME" x="292.1" y="228.6" size="2.54" layer="95"/>
+<attribute name="VALUE" x="304.8" y="132.08" size="2.54" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -16457,6 +16460,11 @@ pull-ups from I2C bus</text>
 <label x="69.85" y="208.28" size="1.778" layer="95"/>
 <pinref part="R15" gate="G$1" pin="1"/>
 </segment>
+<segment>
+<pinref part="U$9" gate="G$1" pin="PB11"/>
+<wire x1="287.02" y1="147.32" x2="276.86" y2="147.32" width="0.1524" layer="91"/>
+<label x="271.78" y="147.32" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="INPUTSCL" class="0">
 <segment>
@@ -16466,6 +16474,11 @@ pull-ups from I2C bus</text>
 <label x="69.85" y="205.74" size="1.778" layer="95"/>
 <pinref part="R16" gate="G$1" pin="1"/>
 <wire x1="59.69" y1="212.09" x2="59.69" y2="213.36" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$9" gate="G$1" pin="PB10"/>
+<wire x1="287.02" y1="149.86" x2="276.86" y2="149.86" width="0.1524" layer="91"/>
+<label x="271.78" y="149.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -16783,6 +16796,11 @@ pull-ups from I2C bus</text>
 <label x="156.21" y="209.55" size="1.778" layer="95"/>
 <pinref part="R18" gate="G$1" pin="1"/>
 </segment>
+<segment>
+<pinref part="U$9" gate="G$1" pin="PB7"/>
+<wire x1="345.44" y1="208.28" x2="355.6" y2="208.28" width="0.1524" layer="91"/>
+<label x="347.98" y="208.28" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="INPUTSCL1" class="0">
 <segment>
@@ -16792,6 +16810,11 @@ pull-ups from I2C bus</text>
 <label x="156.21" y="207.01" size="1.778" layer="95"/>
 <pinref part="R19" gate="G$1" pin="1"/>
 <wire x1="146.05" y1="213.36" x2="146.05" y2="214.63" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$9" gate="G$1" pin="PB6"/>
+<wire x1="345.44" y1="205.74" x2="355.6" y2="205.74" width="0.1524" layer="91"/>
+<label x="347.98" y="205.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RESET1" class="0">
@@ -17110,13 +17133,6 @@ pull-ups from I2C bus</text>
 <pinref part="U11" gate="U$1" pin="P0.05@09"/>
 </segment>
 </net>
-<net name="P0.06" class="0">
-<segment>
-<wire x1="78.74" y1="45.72" x2="76.2" y2="45.72" width="0.1524" layer="91"/>
-<label x="76.2" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U11" gate="U$1" pin="P0.06@10"/>
-</segment>
-</net>
 <net name="P0.08" class="0">
 <segment>
 <wire x1="99.06" y1="22.86" x2="99.06" y2="20.32" width="0.1524" layer="91"/>
@@ -17164,20 +17180,6 @@ pull-ups from I2C bus</text>
 <wire x1="114.3" y1="22.86" x2="114.3" y2="20.32" width="0.1524" layer="91"/>
 <label x="114.3" y="20.32" size="1.27" layer="95" rot="R270" xref="yes"/>
 <pinref part="U11" gate="U$1" pin="P0.14@20"/>
-</segment>
-</net>
-<net name="P0.15" class="0">
-<segment>
-<wire x1="116.84" y1="22.86" x2="116.84" y2="20.32" width="0.1524" layer="91"/>
-<label x="116.84" y="20.32" size="1.27" layer="95" rot="R270" xref="yes"/>
-<pinref part="U11" gate="U$1" pin="P0.15@21"/>
-</segment>
-</net>
-<net name="P0.16" class="0">
-<segment>
-<wire x1="119.38" y1="22.86" x2="119.38" y2="20.32" width="0.1524" layer="91"/>
-<label x="119.38" y="20.32" size="1.27" layer="95" rot="R270" xref="yes"/>
-<pinref part="U11" gate="U$1" pin="P0.16@22"/>
 </segment>
 </net>
 <net name="SWDIO/NRESET" class="0">
@@ -17237,13 +17239,6 @@ pull-ups from I2C bus</text>
 <wire x1="220.98" y1="63.5" x2="220.98" y2="66.04" width="0.1524" layer="91"/>
 <junction x="220.98" y="66.04"/>
 <junction x="231.14" y="66.04"/>
-</segment>
-</net>
-<net name="P0.07" class="0">
-<segment>
-<wire x1="76.2" y1="43.18" x2="78.74" y2="43.18" width="0.1524" layer="91"/>
-<label x="76.2" y="43.18" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U11" gate="U$1" pin="P0.07@11"/>
 </segment>
 </net>
 <net name="P0.25" class="0">
@@ -17347,6 +17342,30 @@ pull-ups from I2C bus</text>
 <wire x1="200.66" y1="66.04" x2="195.58" y2="66.04" width="0.1524" layer="91"/>
 <junction x="195.58" y="66.04"/>
 <wire x1="195.58" y1="66.04" x2="190.5" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="BLE_RX" class="0">
+<segment>
+<pinref part="U$9" gate="G$1" pin="PA9/UART1_TX"/>
+<wire x1="345.44" y1="165.1" x2="358.14" y2="165.1" width="0.1524" layer="91"/>
+<label x="353.06" y="165.1" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="76.2" y1="43.18" x2="78.74" y2="43.18" width="0.1524" layer="91"/>
+<label x="76.2" y="43.18" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U11" gate="U$1" pin="P0.07@11"/>
+</segment>
+</net>
+<net name="BLE_TX" class="0">
+<segment>
+<pinref part="U$9" gate="G$1" pin="PA10/UART1_RX"/>
+<wire x1="345.44" y1="167.64" x2="358.14" y2="167.64" width="0.1524" layer="91"/>
+<label x="353.06" y="167.64" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="78.74" y1="45.72" x2="76.2" y2="45.72" width="0.1524" layer="91"/>
+<label x="76.2" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U11" gate="U$1" pin="P0.06@10"/>
 </segment>
 </net>
 </nets>

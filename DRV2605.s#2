@@ -18340,9 +18340,19 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND19" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="C21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="0.1uf"/>
 <part name="C22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="10uf"/>
-<part name="GND20" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="C23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="2.2uf"/>
 <part name="C24" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="2.2uf"/>
+<part name="C25" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="0.1uf"/>
+<part name="GND21" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="SUPPLY23" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VCC" device=""/>
+<part name="C26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="0.1uf"/>
+<part name="C27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="0.1uf"/>
+<part name="SUPPLY24" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VCC" device=""/>
+<part name="C28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="0.1uf"/>
+<part name="GND20" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="C29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="0.1uf"/>
+<part name="C30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="0.1uf"/>
+<part name="C31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="10uf"/>
 </parts>
 <sheets>
 <sheet>
@@ -19744,12 +19754,22 @@ pull-ups from I2C bus</text>
 <instance part="R23" gate="G$1" x="248.92" y="190.5" rot="R90"/>
 <instance part="GND18" gate="1" x="375.92" y="162.56"/>
 <instance part="R22" gate="G$1" x="368.3" y="210.82"/>
-<instance part="GND19" gate="1" x="264.16" y="180.34"/>
-<instance part="C21" gate="G$1" x="228.6" y="170.18"/>
-<instance part="C22" gate="G$1" x="236.22" y="170.18"/>
-<instance part="GND20" gate="1" x="228.6" y="157.48"/>
+<instance part="GND19" gate="1" x="264.16" y="165.1"/>
+<instance part="C21" gate="G$1" x="259.08" y="104.14"/>
+<instance part="C22" gate="G$1" x="269.24" y="104.14"/>
 <instance part="C23" gate="G$1" x="264.16" y="144.78" rot="R270"/>
 <instance part="C24" gate="G$1" x="365.76" y="177.8" rot="R90"/>
+<instance part="C25" gate="G$1" x="248.92" y="104.14"/>
+<instance part="GND21" gate="1" x="248.92" y="93.98"/>
+<instance part="SUPPLY23" gate="G$1" x="248.92" y="114.3"/>
+<instance part="C26" gate="G$1" x="279.4" y="104.14"/>
+<instance part="C27" gate="G$1" x="289.56" y="104.14"/>
+<instance part="SUPPLY24" gate="G$1" x="355.6" y="233.68"/>
+<instance part="C28" gate="G$1" x="228.6" y="167.64"/>
+<instance part="GND20" gate="1" x="228.6" y="157.48"/>
+<instance part="C29" gate="G$1" x="299.72" y="104.14"/>
+<instance part="C30" gate="G$1" x="309.88" y="104.14"/>
+<instance part="C31" gate="G$1" x="320.04" y="104.14"/>
 </instances>
 <busses>
 </busses>
@@ -19843,6 +19863,72 @@ pull-ups from I2C bus</text>
 <pinref part="U$6" gate="G$1" pin="3"/>
 <pinref part="P+10" gate="VCC" pin="VCC"/>
 <wire x1="46.99" y1="190.5" x2="46.99" y2="193.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY22" gate="G$1" pin="VCC"/>
+<pinref part="R21" gate="G$1" pin="1"/>
+<wire x1="271.78" y1="233.68" x2="271.78" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="220.98" x2="271.78" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="205.74" x2="274.32" y2="205.74" width="0.1524" layer="91"/>
+<pinref part="U$9" gate="G$1" pin="VDDA"/>
+<wire x1="289.56" y1="190.5" x2="271.78" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="190.5" x2="271.78" y2="205.74" width="0.1524" layer="91"/>
+<junction x="271.78" y="205.74"/>
+<pinref part="U$9" gate="G$1" pin="VBAT"/>
+<wire x1="289.56" y1="220.98" x2="271.78" y2="220.98" width="0.1524" layer="91"/>
+<junction x="271.78" y="220.98"/>
+<pinref part="U$9" gate="G$1" pin="VDD1"/>
+<wire x1="289.56" y1="175.26" x2="271.78" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="175.26" x2="271.78" y2="190.5" width="0.1524" layer="91"/>
+<junction x="271.78" y="190.5"/>
+<pinref part="U$9" gate="G$1" pin="VDD2"/>
+<wire x1="289.56" y1="142.24" x2="271.78" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="142.24" x2="271.78" y2="175.26" width="0.1524" layer="91"/>
+<junction x="271.78" y="175.26"/>
+</segment>
+<segment>
+<pinref part="C25" gate="G$1" pin="1"/>
+<wire x1="248.92" y1="106.68" x2="248.92" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="C21" gate="G$1" pin="1"/>
+<wire x1="248.92" y1="109.22" x2="259.08" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="109.22" x2="259.08" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="C22" gate="G$1" pin="1"/>
+<wire x1="259.08" y1="109.22" x2="269.24" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="109.22" x2="269.24" y2="106.68" width="0.1524" layer="91"/>
+<junction x="259.08" y="109.22"/>
+<junction x="248.92" y="109.22"/>
+<pinref part="SUPPLY23" gate="G$1" pin="VCC"/>
+<wire x1="248.92" y1="109.22" x2="248.92" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="109.22" x2="279.4" y2="109.22" width="0.1524" layer="91"/>
+<junction x="269.24" y="109.22"/>
+<pinref part="C26" gate="G$1" pin="1"/>
+<wire x1="279.4" y1="109.22" x2="289.56" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="109.22" x2="299.72" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="109.22" x2="309.88" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="106.68" x2="279.4" y2="109.22" width="0.1524" layer="91"/>
+<junction x="279.4" y="109.22"/>
+<pinref part="C27" gate="G$1" pin="1"/>
+<wire x1="289.56" y1="106.68" x2="289.56" y2="109.22" width="0.1524" layer="91"/>
+<junction x="289.56" y="109.22"/>
+<pinref part="C29" gate="G$1" pin="1"/>
+<wire x1="299.72" y1="106.68" x2="299.72" y2="109.22" width="0.1524" layer="91"/>
+<junction x="299.72" y="109.22"/>
+<pinref part="C30" gate="G$1" pin="1"/>
+<wire x1="309.88" y1="106.68" x2="309.88" y2="109.22" width="0.1524" layer="91"/>
+<junction x="309.88" y="109.22"/>
+<pinref part="C31" gate="G$1" pin="1"/>
+<wire x1="309.88" y1="109.22" x2="320.04" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="109.22" x2="320.04" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$9" gate="G$1" pin="VDD4"/>
+<pinref part="SUPPLY24" gate="G$1" pin="VCC"/>
+<wire x1="347.98" y1="220.98" x2="355.6" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="220.98" x2="355.6" y2="233.68" width="0.1524" layer="91"/>
+<pinref part="U$9" gate="G$1" pin="VDD3"/>
+<wire x1="347.98" y1="180.34" x2="355.6" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="180.34" x2="355.6" y2="220.98" width="0.1524" layer="91"/>
+<junction x="355.6" y="220.98"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -20030,22 +20116,58 @@ pull-ups from I2C bus</text>
 <wire x1="375.92" y1="177.8" x2="375.92" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="370.84" y1="177.8" x2="375.92" y2="177.8" width="0.1524" layer="91"/>
 <junction x="375.92" y="177.8"/>
+<pinref part="U$9" gate="G$1" pin="VSS2"/>
+<wire x1="347.98" y1="218.44" x2="375.92" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="375.92" y1="218.44" x2="375.92" y2="210.82" width="0.1524" layer="91"/>
+<junction x="375.92" y="210.82"/>
 </segment>
 <segment>
 <pinref part="U$9" gate="G$1" pin="VSSA"/>
 <pinref part="GND19" gate="1" pin="GND"/>
 <wire x1="289.56" y1="193.04" x2="264.16" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="264.16" y1="193.04" x2="264.16" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="193.04" x2="264.16" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="U$9" gate="G$1" pin="VSS1"/>
+<wire x1="264.16" y1="177.8" x2="264.16" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="177.8" x2="264.16" y2="177.8" width="0.1524" layer="91"/>
+<junction x="264.16" y="177.8"/>
+</segment>
+<segment>
+<pinref part="GND21" gate="1" pin="GND"/>
+<pinref part="C25" gate="G$1" pin="2"/>
+<wire x1="248.92" y1="96.52" x2="248.92" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="C22" gate="G$1" pin="2"/>
+<wire x1="269.24" y1="99.06" x2="269.24" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="96.52" x2="259.08" y2="96.52" width="0.1524" layer="91"/>
+<junction x="248.92" y="96.52"/>
+<pinref part="C21" gate="G$1" pin="2"/>
+<wire x1="259.08" y1="96.52" x2="248.92" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="99.06" x2="259.08" y2="96.52" width="0.1524" layer="91"/>
+<junction x="259.08" y="96.52"/>
+<wire x1="269.24" y1="96.52" x2="279.4" y2="96.52" width="0.1524" layer="91"/>
+<junction x="269.24" y="96.52"/>
+<pinref part="C26" gate="G$1" pin="2"/>
+<wire x1="279.4" y1="96.52" x2="289.56" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="96.52" x2="299.72" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="96.52" x2="309.88" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="99.06" x2="279.4" y2="96.52" width="0.1524" layer="91"/>
+<junction x="279.4" y="96.52"/>
+<pinref part="C27" gate="G$1" pin="2"/>
+<wire x1="289.56" y1="99.06" x2="289.56" y2="96.52" width="0.1524" layer="91"/>
+<junction x="289.56" y="96.52"/>
+<pinref part="C29" gate="G$1" pin="2"/>
+<wire x1="299.72" y1="99.06" x2="299.72" y2="96.52" width="0.1524" layer="91"/>
+<junction x="299.72" y="96.52"/>
+<pinref part="C30" gate="G$1" pin="2"/>
+<wire x1="309.88" y1="99.06" x2="309.88" y2="96.52" width="0.1524" layer="91"/>
+<junction x="309.88" y="96.52"/>
+<pinref part="C31" gate="G$1" pin="2"/>
+<wire x1="309.88" y1="96.52" x2="320.04" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="96.52" x2="320.04" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND20" gate="1" pin="GND"/>
-<pinref part="C21" gate="G$1" pin="2"/>
+<pinref part="C28" gate="G$1" pin="2"/>
 <wire x1="228.6" y1="160.02" x2="228.6" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="C22" gate="G$1" pin="2"/>
-<wire x1="228.6" y1="162.56" x2="228.6" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="165.1" x2="236.22" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="162.56" x2="228.6" y2="162.56" width="0.1524" layer="91"/>
-<junction x="228.6" y="162.56"/>
 </segment>
 </net>
 <net name="0SDA" class="0">
@@ -20766,8 +20888,14 @@ pull-ups from I2C bus</text>
 <segment>
 <pinref part="U$9" gate="G$1" pin="NRST"/>
 <wire x1="289.56" y1="205.74" x2="284.48" y2="205.74" width="0.1524" layer="91"/>
-<label x="281.94" y="208.28" size="1.778" layer="95"/>
+<label x="284.48" y="205.74" size="1.778" layer="95"/>
 <pinref part="R21" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="C28" gate="G$1" pin="1"/>
+<wire x1="228.6" y1="170.18" x2="228.6" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="175.26" x2="231.14" y2="175.26" width="0.1524" layer="91"/>
+<label x="231.14" y="175.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="P0.26/XL1" class="0">
@@ -20801,27 +20929,6 @@ pull-ups from I2C bus</text>
 <pinref part="U$9" gate="G$1" pin="PH1"/>
 <wire x1="289.56" y1="208.28" x2="256.54" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="256.54" y1="208.28" x2="256.54" y2="185.42" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="VDDA" class="0">
-<segment>
-<pinref part="SUPPLY22" gate="G$1" pin="VCC"/>
-<pinref part="R21" gate="G$1" pin="1"/>
-<wire x1="271.78" y1="233.68" x2="271.78" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="271.78" y1="205.74" x2="274.32" y2="205.74" width="0.1524" layer="91"/>
-<pinref part="U$9" gate="G$1" pin="VDDA"/>
-<wire x1="289.56" y1="190.5" x2="271.78" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="271.78" y1="190.5" x2="271.78" y2="205.74" width="0.1524" layer="91"/>
-<junction x="271.78" y="205.74"/>
-<label x="274.32" y="190.5" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C21" gate="G$1" pin="1"/>
-<pinref part="C22" gate="G$1" pin="1"/>
-<wire x1="228.6" y1="172.72" x2="236.22" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="172.72" x2="246.38" y2="172.72" width="0.1524" layer="91"/>
-<junction x="236.22" y="172.72"/>
-<label x="241.3" y="172.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$5" class="0">
